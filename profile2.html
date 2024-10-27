@@ -1,0 +1,56 @@
+<p>name: jasmine walters</p>
+<p>phone number: (123) 456 - 7890</p>
+<p>email: jasminew123@gmail.com</p>
+<p>home address: 123 St, #101, Germantown, MD 12345</p>
+</div>
+
+<!--teacher info section-->
+<div class = "section" id = "teacher-info">
+<h2>teacher's info</h2>
+<p>name: jane doe</p>
+<p>subject: math</p>
+<p>email: janedoe123@gmail.com</p>
+<script>
+document.getElementById("learning-style-quiz").addEventListener("submit", function(event) {
+event.preventDefault(); // prevents form submission
+
+// collect the answers
+const answers = {
+    visual: 0,
+    auditory: 0,
+    kinesthetic: 0
+};
+
+const formData = new FormData(event.target);
+formData.forEach(value => {
+    answers[value]++; // Count each selected answer
+});
+
+// determine the highest-scoring learning style
+let highestScore = 0;
+let learningStyle = "";
+for (const style in answers) {
+    if (answers[style] > highestScore) {
+        highestScore = answers[style];
+        learningStyle = style;
+    }
+}
+
+// display the result
+document.getElementById("learning-style-result").textContent = learningStyle.charAt(0).toUpperCase() + learningStyle.slice(1);
+
+// optional description for each style
+let styleDescription = "";
+if (learningStyle === "visual") {
+    styleDescription = "you learn best through visual aids like images, diagrams, and charts.";
+} else if (learningStyle === "auditory") {
+    styleDescription = "you prefer auditory input, such as lectures, podcasts, or discussions.";
+} else if (learningStyle === "kinesthetic") {
+    styleDescription = "you benefit from hands-on experiences and physical activities.";
+}
+document.getElementById("quiz-result").innerHTML += `<p>${styleDescription}</p>`;
+});
+</script>
+
+</body>
+</html>

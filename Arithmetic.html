@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Resources</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Courier New', Courier, monospace; /* Typewriter font */
+            background-color: lemonchiffon; /* Cream background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: #fffef4; /* Light cream */
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 100%;
+        }
+
+        .container h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #fa727b; /* Pink */
+            font-size: 2em;
+        }
+
+        .resource {
+            margin-bottom: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .resource:last-child {
+            margin-bottom: 0;
+        }
+
+        .resource a {
+            display: block;
+            padding: 15px 20px;
+            background-color: #fa727b; /* Pink */
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 1.1em;
+            font-weight: 500;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .resource a:hover {
+            background-color: #e76f51; /* Darker mustard */
+            transform: translateY(-3px);
+        }
+
+        .resource:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 20px;
+            }
+
+            .container h1 {
+                font-size: 1.8em;
+            }
+
+            .resource a {
+                font-size: 1em;
+                padding: 12px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Math Resources</h1>
+        <div class="resource">
+            <a href="https://www.khanacademy.org/math/arithmetic" target="_blank">Khan Academy</a>
+        </div>
+        <div class="resource">
+            <a href="https://mathtrainer.ai/" target="_blank">Math Trainer</a>
+        </div>
+        <div class="resource">
+            <a href="https://www.wolframalpha.com/problem-generator/?scrollTo=Linearalgebra" target="_blank">Wolfram Alpha</a>
+        </div>
+        <div class="resource">
+            <a href="https://mathantics.com/" target="_blank">Mathantics</a>
+        </div>
+    </div>
+</body>
+</html>

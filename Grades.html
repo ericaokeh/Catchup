@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Grades</title>
+  <link href="Grades.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<h1>Grades Week 1</h1>
+<div class = "sections">
+  <div class = "section" id="mat">
+    <h2>Math</h2>
+    <h3>Unit 1</h3>
+    <p>
+      Attempt 1: <input type ="number" id="mathAttempt1" placeholder="score">
+      <button onclick = "calculateGrade('mathAttempt1')">Calculate</button>
+      <span id="mathResult1"></span>
+      <br>
+      Attempt 2: <input type ="number" id="mathAttempt2" placeholder="score">
+      <button onclick = "calculateGrade('mathAttempt2')">Calculate</button>
+      <span id="mathResult2"></span>
+    </p>
+</div>
+
+  <div class="section" id="english">
+    <h2>English</h2>
+    <h3>Unit 1</h3>
+    <p>
+      Attempt 1: <input type ="number" id="englishAttempt1" placeholder="score">
+      <button onclick = "calculateGrade('englishAttempt1')">Calculate</button>
+      <span id="englishResult1"></span>
+      <br>
+      Attempt 2: <input type ="number" id="englishAttempt2" placeholder="score">
+      <button onclick = "calculateGrade('englishAttempt2')">Calculate</button>
+      <span id="englishResult2"></span>
+    </p>
+  </div> 
+
+  <div class="section" id="history">
+    <h2>History</h2>
+    <h3>Unit 1</h3>
+    <p>
+      Attempt 1: <input type ="number" id="histAttempt1" placeholder="score">
+      <button onclick = "calculateGrade('histAttempt1')">Calculate</button>
+      <span id="histResult1"></span>
+      <br>
+      Attempt 2: <input type ="number" id="histAttempt2" placeholder="score">
+      <button onclick = "calculateGrade('histAttempt2')">Calculate</button>
+      <span id="histResult2"></span>
+    </p>
+  </div>
+
+  <div class="section" id="science">
+    <h2>Science</h2>
+    <h3>Unit 1</h3>
+    <p>
+      Attempt 1: <input type ="number" id="sciAttempt1" placeholder="score">
+      <button onclick = "calculateGrade('sciAttempt1')">Calculate</button>
+      <span id="sciResult1"></span><br>
+      Attempt 2: <input type ="number" id="sciAttempt2" placeholder="score">
+      <button onclick = "calculateGrade('sciAttempt2')">Calculate</button>
+      <span id="sciResult2"></span><br>
+    </p>
+  </div>
+
+</div>
+<script src="Grades.js"></script>
+</body>
+
+</html>

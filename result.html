@@ -1,0 +1,54 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Student Grades</title>
+</head>
+<body>
+    <h1>Student Grades</h1>
+
+    <input type="text" id="studentName" placeholder="Enter name">
+    <input type="number" id="studentScore" placeholder="Enter score (0-10)" min="0" max="10">
+    <button onclick="submitStudentData()">Submit</button>
+
+    <div id="grade-display" style="margin-top: 20px;"></div>
+
+    <script>
+        function submitStudentData() {
+            var name = document.getElementById('studentName').value;
+            var score = parseInt(document.getElementById('studentScore').value) * 10;
+
+            if (name && !isNaN(score)) {
+                var students = localStorage.getItem('students');
+                students = students ? JSON.parse(students) : [];
+                students.push({ name: name, score: score });
+                localStorage.setItem('students', JSON.stringify(students));
+                displayStudentData();
+                document.getElementById('studentName').value = '';
+                document.getElementById('studentScore').value = '';
+                alert(name + "'s score of " + score + "% has been saved!");
+            } else {
+                alert('Please enter a valid name and score.');
+            }
+        }
+
+        function displayStudentData() {
+            var students = localStorage.getItem('students');
+            students = students ? JSON.parse(students) : [];
+            var displayDiv = document.getElementById('grade-display');
+            displayDiv.innerHTML = "";
+
+            if (students.length > 0) {
+                displayDiv.innerHTML += "<h3>Stored Student Data:</h3>";
+                for (var i = 0; i < students.length; i++) {
+                    displayDiv.innerHTML += "Name: " + students[i].name + 
+                                            " | Score: " + students[i].score + "%<br>";
+                }
+            } else {
+                displayDiv.innerHTML = "No data found.";
+            }
+        }
+
+        displayStudentData();
+    </script>
+</body>
+</html> -->

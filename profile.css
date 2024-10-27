@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:#bbe4ae;
+    color: #8f5d46;
+    font-family: 'Quicksand', sans-serif;
+    padding: 20px;
+}
+
+
+.profile-header {
+    text-align: center;
+    padding: 30px;
+    width: 100%;
+    font-family: 'Quicksand', sans-serif;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.profile-pic  {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px;
+    object-fit: cover;
+    margin: 0 auto;
+    display: block;
+
+}
+
+.sections {
+    display: grid;
+    grid-template-columns: 1fr 1 fr;
+    gap: 20px;
+    padding: 20px;
+    max-width: 800px;
+    width: 100%;
+}
+
+.section {
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    animation: slideIn 0.8s ease-in-out;
+}
+.section:hover {
+    transform: scale(1.05);
+    background-color: #ffebe8;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #8f5d46;
+    margin-bottom: 10px;
+}
+
+p, ul {
+    color: #8f5d46;
+    line-height: 1.6;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+/* quiz styling */
+#learning-styles {
+    background-color: #fff8e1;
+}
+
+#learning-style-quiz h3 {
+    font-size: 1.2em;
+    color: #8f5d46;
+    margin-bottom: 10px;
+}
+
+#learning-style-quiz label {
+    display: block;
+    margin: 10px 0;
+    color: #8f5d46;
+}
+
+#learning-style-quiz button {
+    background-color: #8f5d46;
+    color: #ffffff;
+    font-size: 1em;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#learning-style-quiz button:hover {
+    background-color: #6f4434;
+}
+
+/* display the quiz result */
+#quiz-result {
+    font-size: 1.1em;
+    margin-top: 20px;
+    color: #8f5d46;
+}
+
+#learning-style-result {
+    font-weight: bold;
+    color: #d62828;
+}
+
+/* animations for fade-in and fade-out */
+@keyframes fadeIn {
+    from { opacity: 0;}
+    to { opacity: 1;}
+}
+@keyframes slideIn {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1;}
+}
+
+/* background graphics styling */
+.graphic {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+    opacity: 0.8;
+}
+
+/* graphic positions */
+.graphic1 {
+    background-image: url('images/tomato1\ copy.png');
+    top: 3%;
+    left: 5%;
+    animation: float 4s ease-in-out infinite;
+}
+
+
+
+.graphic2 {
+    background-image: url('images/tomato2\ copy.png');
+    top: 3%;
+    left: 85%;
+    animation: float 7s ease-in-out infinite;
+}
+
+
+
+/* floating animation */
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}

@@ -1,0 +1,165 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  body {
+    background-color: #fffef4;
+  }
+  
+  .welcome {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:-3.3%;
+    padding-bottom: 4%;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: -2%;
+    left: 9%;
+  }
+  
+  .icon {
+    padding-left: 92%;
+    display: inline-block;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+  font-size: 150%;
+    color:#a96e53;
+  }
+  
+  .icon img:hover {
+    filter: brightness(110%);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  marquee {
+    color: #8f5d46;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 150%;
+  }
+  
+  .col {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-top:4%;
+    padding-bottom: 20%;
+    /*uhh it prevents the scrollbar from shifting page when dropdown opens*/
+    background-color: lemonchiffon;
+  }
+  
+  .leftc {
+    flex: 50%;
+     flex-direction: column-reverse;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  button:hover {
+    color: #fffef4;
+    background-color: #a96e53;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .button1 {
+    padding: 16px 24px;
+    width: 135%;
+    border-radius: 50px;
+    display: inline-block;
+    position: relative;
+  }
+  
+  .dropdown-content {
+    display: none;
+    font-size:200%;
+    min-width:300px;
+    position: absolute;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #fffce1;
+    color: #a96e53;
+    border-radius: 24px;
+    all 0.2s ease-in-out;
+  }
+  
+  .dropdown-content a {
+    color: #8f5d46;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Courier New', Courier, monospace;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .button2 {
+    padding: 16px 24px;
+    border-radius: 50px;
+    width:50%;
+  }
+  
+  .rightc {
+    flex: 50%;
+    display: block;
+  }
+  
+  button {
+    background-color: #8f5d46;
+    color: #fffbce;
+    font-size:200%;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 1px;
+    border: none;
+    padding: 5px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: lemonchiffon;
+  }
+  
+  
+  ::-webkit-scrollbar-thumb {
+    background: #ffc24a;
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #fa727b;
+  }
+  
+  .overlay {
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+  
+    50% {
+        transform: translateY(-1%);
+    }
+  
+    100% {
+        transform: translateY(0);
+    }
+  }
