@@ -78,7 +78,7 @@ html {
   .dropdown-content {
     display: none;
     font-size:200%;
-    min-width:300px;
+    min-width:135%;
     position: absolute;
   }
   

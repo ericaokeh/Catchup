@@ -65,11 +65,11 @@
     <h1><img src="Welcome to (2).png" style="max-width: 82%;"></h1>
     <div class="container">
         <div class="input-group">
-            <label for="name">Enter your name:</label>
+            <label for="name">enter name:</label>
             <input type="text" id="name" name="name" placeholder="Your Name" required>
         </div>
-        <button id="submit-button">Find My Buddy</button>
-        <a href="Arithmetic.html"><button id="submit-button">Unit 1 Math Resources </button></a>
+        <button id="submit-button">find my buddy</button>
+        <a href="Arithmetic.html"><button id="submit-button">unit 1 math resources </button></a>
         <div id="buddy-result" class="hidden"></div>
     </div>
 
@@ -82,10 +82,10 @@
 
             if (pairing) {
                 if (pairing.buddy) {
-                    buddyResultDiv.innerHTML = `<strong>Study Buddy Pairing:</strong><br>
-                        ${pairing.user.name} is paired with: ${pairing.buddy.name}`;
+                    buddyResultDiv.innerHTML = `<strong>study buddy pairing:</strong><br>
+                        ${pairing.user.name} is paired with: ${pairing.buddy.name}. recommended study topics: math: arithmetic, english: adverbs` ;
                 } else {
-                    buddyResultDiv.innerHTML = `<strong>Study Buddy Pairing:</strong><br>
+                    buddyResultDiv.innerHTML = `<strong>study buddy pairing:</strong><br>
                         ${pairing.user.name} (${pairing.user.score}%) is currently without a study buddy.`;
                 }
                 buddyResultDiv.classList.remove('hidden');
