@@ -49,7 +49,7 @@
 
         function showQuestions() {
             var examDiv = document.getElementById('exam');
-            examDiv.innerHTML = ''; // Clear any existing content
+            examDiv.innerHTML = ''; 
 
             for (var i = 0; i < questions.length; i++) {
                 var questionDiv = document.createElement('div');
@@ -143,7 +143,7 @@
             }
 
             var percent = (score / questions.length) * 100;
-            var grade = percent.toFixed(2); // Rounded to two decimal places
+            var grade = percent.toFixed(2); 
 
             var userName = prompt("Enter your name:");
 
